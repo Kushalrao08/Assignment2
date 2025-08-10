@@ -44,7 +44,7 @@
  #hero {
      display: flex;
      padding: 2rem;
-     justify-content: space-between;
+     justify-content: space-around;
      align-items: center;
  }
 
