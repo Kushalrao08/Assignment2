@@ -48,7 +48,6 @@
  #hero {
      display: flex;
      height: calc(100vh - 80px);
-     /* Adjust based on navbar height */
      padding: 4rem;
      justify-content: center;
      align-items: center;
