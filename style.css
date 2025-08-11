@@ -48,10 +48,12 @@
  #hero {
      display: flex;
      height: calc(100vh - 80px);
-     padding: 4rem;
-     justify-content: center;
+     padding: 2rem;
+     /* adjusted from merge */
+     justify-content: space-around;
      align-items: center;
  }
+
 
  ul {
      list-style: none;
