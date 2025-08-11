@@ -4,111 +4,90 @@
      box-sizing: border-box;
  }
 
- body,
- html {
-     font-family: Arial, sans-serif;
-     height: 100vh;
-     overflow: hidden;
- }
-
  nav {
      display: flex;
      justify-content: space-around;
-     align-items: center;
-     padding: 1rem 2rem;
-     background-color: #ffffff;
  }
 
- .nav-left {
+ .navleft {
      font-size: 2rem;
-     font-weight: bold;
      font-style: italic;
+     font-weight: 600;
  }
 
- .nav-left:hover {
-     cursor: default;
+ nav,
+ .navlinks {
+     display: flex;
+     align-items: center;
  }
 
- .nav-center a {
-     margin: 0 1rem;
+ nav {
+     justify-content: space-around;
+     height: 17vh;
+ }
+
+ .navlinks {
+     gap: 2rem;
+     list-style: none;
+     font-size: 1.2rem;
+ }
+
+ .navlinks a {
      text-decoration: none;
-     color: #333;
-     font-size: 1.1rem;
-     font-weight: 500;
+     color: #555;
  }
 
- .nav-right {
-     background-color: #e6f2ff;
-     padding: 0.5rem 1rem;
+ nav li:last-child {
+     margin: auto;
+     width: max-content;
+     display: flex;
+     padding: 10px;
+ }
+
+ .navright {
+     font-size: 1.2rem;
+     border: 1px none;
+     padding: 10px 20px;
+     background: lightblue;
      border-radius: 10px;
      color: #007bff;
-     font-weight: bold;
- }
-
- #hero {
-     display: flex;
-     height: calc(100vh - 80px);
-     padding: 2rem;
-     /* adjusted from merge */
-     justify-content: space-around;
-     align-items: center;
- }
-
-
- ul {
-     list-style: none;
-     display: flex;
-     padding: 0;
-     margin: 0;
- }
-
- .hero-left {
-     flex: 1;
-     padding: 2rem;
-     justify-content: space-around;
- }
-
- .hero-left h1 {
-     font-size: 3rem;
-     color: #333;
-     margin-bottom: 1rem;
- }
-
- .hero-left h1 span {
-     color: #0099ff;
- }
-
- .hero-left p {
-     font-size: 1.1rem;
-     color: #666;
-     margin-bottom: 2rem;
-     max-width: 500px;
- }
-
- .hero-left button {
-     padding: 1rem 2rem;
-     background-color: #0099ff;
-     color: #fff;
-     font-size: 1rem;
-     border: none;
-     border-radius: 12px;
      cursor: pointer;
-     transition: background-color 0.3s ease;
  }
 
- .hero-left button:hover {
-     background-color: #007acc;
- }
-
- .hero-right {
-     flex: 1;
+ .hero {
      display: flex;
-     padding: 2rem;
-     justify-content: space-around;
      align-items: center;
+     justify-content: space-around;
+     padding: 50px 200px;
  }
 
- img {
-     max-width: 100%;
-     max-height: 80vh;
+ h1 {
+     font-size: 3rem;
+     font-weight: 600;
+     line-height: 1.2;
+     color: #333;
+ }
+
+ span {
+     color: #007bff;
+ }
+
+ p {
+     font-size: 1.5rem;
+     color: #555;
+ }
+
+ button {
+     padding: 20px;
+     font-size: 1.2rem;
+     background: #007bff;
+     color: white;
+     border: none;
+     border-radius: 20px;
+     cursor: pointer;
+ }
+
+ .heroright {
+     width: 100%;
+     height: auto;
  }
